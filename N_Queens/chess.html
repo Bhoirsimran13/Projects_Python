@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>N-Queens Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="controls">
+    <h1>N-Queens Visualizer</h1>
+    <div>Solve N-Queens and display solutions as a chessboard.</div>
+
+    <label for="nInput">Board size (N)</label>
+    <input id="nInput" type="number" min="1" max="14" value="8" />
+
+    <div class="row">
+      <button id="generateBtn">Generate</button>
+      <button id="prevBtn" class="small-btn" disabled>Prev</button>
+      <button id="nextBtn" class="small-btn" disabled>Next</button>
+      <button id="autoBtn" class="small-btn" disabled>Auto Play</button>
+    </div>
+
+    <div class="meta">
+      <div id="status">Enter N and click Generate.</div>
+      <div class="hint">Tip: N &gt; 12 may take longer & use more memory (many solutions).</div>
+    </div>
+
+    
+  </div>
+
+  <div class="board-wrap">
+    <div id="boardContainer" class="board" aria-label="Chessboard"></div>
+    <div class="info" id="solutionInfo"></div>
+  </div>
+  <script src="script.js">
+    
+  </script>
+
+</body>
+</html>

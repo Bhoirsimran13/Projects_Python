@@ -1,0 +1,119 @@
+:root{
+      --board-size: 480px;
+      --light:#f0d9b5;
+      --dark:#b58863;
+      --accent:#bef16d;
+      --queen-color:#222;
+    }
+    body{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      margin: 20px;
+      display:flex;
+      gap:24px;
+      align-items:flex-start;
+      justify-content:center;
+      color:#111;
+    }
+
+    .controls{
+      max-width:320px;
+      line-height:1.4;
+    }
+
+    h1{ 
+        margin:0 0 8px 0; 
+        font-size:20px;
+    }
+    label{ 
+        font-weight:600; 
+        display:block; 
+        margin-top:8px; 
+    }
+    input[type="number"]{ 
+        width:100%; padding:8px; 
+        border-radius:6px; 
+        border:1px solid #ddd; 
+        margin-top:6px; 
+        box-sizing:border-box;
+    }
+    button{
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:8px;
+      border: none;
+      background:var(--accent);
+      color:white;
+      font-weight:600;
+      cursor:pointer;
+    }
+    button[disabled]{ 
+        opacity:0.5; 
+        cursor:not-allowed; 
+    }
+
+    .small-btn{ 
+        background:#444; 
+        margin-left:8px; 
+        padding:8px 10px; 
+        font-size:14px;}
+    .row { 
+        display:flex; 
+        gap:8px; 
+        margin-top:8px; 
+        align-items:center; 
+    }
+    .meta{ 
+        margin-top:12px; 
+        color:#333; 
+        font-size:14px; 
+    }
+
+    /* Board container */
+    .board-wrap{
+      --size:var(--board-size);
+      width:var(--size);
+      height:var(--size);
+      display:grid;
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(20,30,50,0.12);
+      align-items:center;
+      justify-items:center;
+    }
+
+    .board{
+      width:calc(var(--size) - 16px);
+      height:calc(var(--size) - 16px);
+      display:grid;
+      border-radius:8px;
+      overflow:hidden;
+      box-sizing:border-box;
+      border:8px solid #fff;
+    }
+
+    .cell{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size: calc(var(--size) / 18);
+      user-select:none;
+    }
+
+    .queen{
+      font-size: 1.15em;
+      color:var(--queen-color);
+      text-shadow: 0 2px 0 rgba(255,255,255,0.6);
+    }
+
+    .info{
+      margin-top:14px;
+      font-size:14px;
+      color:#222;
+    }
+
+    .controls .hint{ 
+        margin-top:10px; 
+        color:#555; 
+        font-size:13px; 
+    }
+
+    
